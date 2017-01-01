@@ -1,0 +1,26 @@
+package JavaBasic;
+
+public class Demo7_Static 
+{
+
+}
+
+class Bottle
+{
+	int cost;
+	static double size;
+
+
+	void m()
+	{
+		System.out.println("This is an instanse variable");
+	}
+
+	static void n()
+	{
+		System.out.println("This is an static method");
+	}
+}
+
+
+

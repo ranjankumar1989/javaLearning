@@ -1,0 +1,31 @@
+package JavaBasic;
+
+public class Demo7_MethodOverloading 
+{
+	public static void main()
+	{
+		mother m = new Daughter();
+		m.sharee();
+		
+	}
+
+}
+
+class mother
+{
+	void sharee()
+	{
+		System.out.println("Simple Saree");
+	}
+
+}
+
+class Daughter extends mother
+{
+	void sharee()
+	{
+		System.out.println("**** jatre Design*******");
+	}
+}
+
+

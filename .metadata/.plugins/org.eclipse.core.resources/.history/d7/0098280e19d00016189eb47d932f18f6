@@ -1,0 +1,38 @@
+
+public class Demo3_Class 
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Program Started");
+		car c = new car();
+		
+		
+		c.name= "Sarthi";
+		c.Cost = 20.5;
+		
+		c.Move();
+		System.out.println("Program Ended");
+	}
+	
+}
+	class car
+	{
+		String name;
+		double Cost;
+		
+		Void Move()
+		{
+			System.out.println("car is moving");
+			return null;
+		}
+		
+	}
+	
+	
+
+	
+			
+		
+	
+	
+

@@ -1,0 +1,44 @@
+package JavaBasic;
+public class Demo9_MOverloadingInheritance
+{
+	public static void main(String args[])
+	{
+		System.out.println("************************************");
+		levelone ref = new levelone();
+		ref.move();
+		System.out.println("*************************************");
+		levelone l1 = new leveltwo();
+		l1.move();
+		System.out.println("**************************************");
+		leveltwo l2 = new levelthree();
+		l2.move();
+	}
+}
+
+class levelone
+{
+	void move()
+	{
+		System.out.println("***** Level 1 ******");
+		System.out.println("*** 100 - 200 *******");
+	}
+}
+
+class leveltwo extends levelone
+{
+	void move()
+	{
+		System.out.println("****** Level 2 ****** ");
+		System.out.println("*** 200 - 300 **** ");
+	}
+}
+
+class levelthree extends leveltwo
+{
+	void move()
+	{
+		System.out.println("*** level 3 ****");
+		System.out.println("*** Turbo ***");
+		System.out.println("*** 300 - 400 ***");
+	}
+}
